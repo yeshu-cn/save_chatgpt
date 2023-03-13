@@ -1,0 +1,16 @@
+  {
+    "manifest_version": 3,
+    "name": "ChatGPT to Markdown",
+    "description": "Save ChatGPT session as Markdown",
+    "version": "1.0",
+    "action": {
+      "default_icon": "ChatGPT_logo.png"
+    },
+    "content_scripts": [
+      {
+          "matches": ["https://chat.openai.com/chat/*"],
+          "css": ["style.css"],
+          "js": ["script.js"]
+      }
+    ]
+  }
